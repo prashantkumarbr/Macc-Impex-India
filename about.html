@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MACC Impex India Pvt. Ltd. | About Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Common reusable animation styles */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInRight {
+        from {
+          opacity: 0;
+          transform: translateX(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes floatText {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fadeInUp 1.2s ease forwards;
+        opacity: 0;
+      }
+      .slide-left {
+        animation: slideInLeft 1.2s ease forwards;
+        opacity: 0;
+      }
+      .slide-right {
+        animation: slideInRight 1.2s ease forwards;
+        opacity: 0;
+      }
+      header h1 {
+        animation: floatText 3s ease-in-out infinite;
+      }
+      .contact-buttons a:hover {
+        animation: pulse 0.8s ease-in-out;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(123, 94, 60, 0.5);
+        }
+        70% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 10px rgba(123, 94, 60, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(123, 94, 60, 0);
+        }
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        background: #f6f2e8;
+        color: #333;
+      }
+      header,
+      footer {
+        text-align: center;
+        background: #7b5e3c;
+        color: white;
+        padding: 20px;
+      }
+      header nav {
+        margin-top: 10px;
+      }
+      header nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 20px;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+      header nav a:hover {
+        color: #ddd;
+      }
+      main {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+        animation: fadeIn 2s;
+      }
+      main h2 {
+        color: #7b5e3c;
+        font-family: "Playfair Display", serif;
+        margin-bottom: 20px;
+      }
+      main p {
+        font-size: 1.1em;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+      .contact-buttons {
+        margin-top: 40px;
+        text-align: center;
+      }
+      .contact-buttons a {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 25px;
+        color: white;
+        background: #7b5e3c;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      .contact-buttons a:hover {
+        background: #aa8659;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>About Us</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>
+        MACC Impex India Pvt. Ltd. — Growing with Quality, Serving with Trust
+      </h2>
+      <p class="slide-right">
+        Founded in 2025 and based in Delhi, MACC Impex India Pvt. Ltd. is
+        dedicated to the trade and export of high-quality rice. We focus on
+        excellence, reliability, and building strong relationships with our
+        clients.
+      </p>
+      <p class="slide-left">
+        Our mission is simple: to connect India’s rich agricultural heritage
+        with international markets through integrity and customer satisfaction.
+        We offer a range of Basmati and Non-Basmati rice varieties tailored to
+        your needs.
+      </p>
+
+      <div class="contact-buttons">
+        <a href="mailto:agroimpex.india.dl@gmail.com">Email Us</a>
+        <a href="https://wa.me/919311824504">WhatsApp</a>
+        <a href="tel:+919311824504">Call Us</a>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2025 MACC Impex India Pvt. Ltd. | Contact: +91 93118 24504 |
+      agroimpex.india.dl@gmail.com, gautammohit793@gmail.com
+    </footer>
+    <script>
+      // Animate elements on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document
+        .querySelectorAll(".fade-in, .slide-left, .slide-right")
+        .forEach((el) => {
+          observer.observe(el);
+        });
+    </script>
+  </body>
+</html>

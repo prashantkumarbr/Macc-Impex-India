@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MACC Impex India Pvt. Ltd. | Products</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Common reusable animation styles */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInRight {
+        from {
+          opacity: 0;
+          transform: translateX(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes floatText {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fadeInUp 1.2s ease forwards;
+        opacity: 0;
+      }
+      .slide-left {
+        animation: slideInLeft 1.2s ease forwards;
+        opacity: 0;
+      }
+      .slide-right {
+        animation: slideInRight 1.2s ease forwards;
+        opacity: 0;
+      }
+      header h1 {
+        animation: floatText 3s ease-in-out infinite;
+      }
+      .contact-buttons a:hover {
+        animation: pulse 0.8s ease-in-out;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(123, 94, 60, 0.5);
+        }
+        70% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 10px rgba(123, 94, 60, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(123, 94, 60, 0);
+        }
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        background: #f6f2e8;
+        color: #333;
+      }
+      header,
+      footer {
+        text-align: center;
+        background: #7b5e3c;
+        color: white;
+        padding: 20px;
+      }
+      header nav {
+        margin-top: 10px;
+      }
+      header nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 20px;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+      header nav a:hover {
+        color: #ddd;
+      }
+      main {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        animation: fadeIn 1.5s;
+      }
+      .product-card {
+        background: white;
+        width: 300px;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
+      .product-card:hover {
+        transform: scale(1.05);
+      }
+      .product-card img {
+        width: 100%;
+      }
+      .product-card .content {
+        padding: 15px;
+      }
+      .product-card h3 {
+        color: #7b5e3c;
+        margin-bottom: 10px;
+        font-family: "Playfair Display", serif;
+      }
+      .product-card p {
+        font-size: 0.95em;
+        line-height: 1.5;
+      }
+      .products-heading {
+        display: flex;
+        justify-content: center;
+      }
+      .products-heading h1 {
+        margin-bottom: 0 !important;
+        color: #7b5e3c;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Our Products</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
+    <div class="products-heading">
+      <h1>Basmati Rice</h1>
+    </div>
+    <main>
+      <div class="slide-left">
+        <div class="product-card">
+          <img src="images/Basmati rice/1401 BASMATI.png" alt="1401 BASMATI" />
+          <div class="content">
+            <h3>1401 Basmati</h3>
+            <p>
+              A premium long-grain Basmati with delicate aroma and fluffy
+              texture, perfect for biryanis and festive meals.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-left">
+        <div class="product-card">
+          <img src="images/Basmati rice/Basmasti 1.png" alt="Basmati Rice" />
+          <div class="content">
+            <h3>Basmati 1</h3>
+            <p>
+              Classic Basmati rice known for its soft grains, subtle fragrance,
+              and exceptional cooking quality.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-left">
+        <div class="product-card">
+          <img src="images/Basmati rice/Basmati 1718.png" alt="Basmati 1718" />
+          <div class="content">
+            <h3>Basmati 1718</h3>
+            <p>
+              High-yielding variety of Basmati with extra-long grains, widely
+              favored for both export and domestic markets.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Basmati rice/purple rice assam.png"
+            alt="purple rice assam"
+          />
+          <div class="content">
+            <h3>Purple Rice Assam</h3>
+            <p>
+              Rare specialty rice with a natural purple hue, rich in
+              antioxidants and unique earthy flavor, grown in Assam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Basmati rice/Pusa basmati 1121.png"
+            alt="Pusa basmati 1121"
+          />
+          <div class="content">
+            <h3>Pusa basmati 1121</h3>
+            <p>
+              Famous for the world’s longest grains after cooking; perfect
+              choice for royal biryanis and gourmet dishes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Basmati rice/Pusa Basmati 1401.png"
+            alt="Pusa basmati 1401"
+          />
+          <div class="content">
+            <h3>Pusa basmati 1401</h3>
+            <p>
+              Premium hybrid Basmati with consistent grain length, superb
+              elongation, and rich aroma.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Basmati rice/Sugandha Basmati and Sharbati Basmati.png"
+            alt="Sugandha Basmati and Sharbati Basmati"
+          />
+          <div class="content">
+            <h3>Sugandha Basmati and Sharbati Basmati</h3>
+            <p>
+              Affordable alternatives to traditional Basmati, offering excellent
+              aroma and soft texture for daily meals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Basmati rice/Traditional Basmati (e.g., Basmati 370, Taraori, Dehraduni Basmati, Kasturi, Mahi Sugandha).png"
+            alt="Traditional Basmati (e.g., Basmati 370, Taraori, Dehraduni Basmati, Kasturi, Mahi Sugandha)"
+          />
+          <div class="content">
+            <h3>
+              Traditional Basmati (e.g., Basmati 370, Taraori, Dehraduni
+              Basmati, Kasturi, Mahi Sugandha)
+            </h3>
+            <p>
+              Time-honored Basmati varieties cherished for their unique
+              fragrance and authentic Indian taste, ideal for traditional
+              cooking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="products-heading">
+      <h1>Prominent Non Basmati Rice</h1>
+    </div>
+    <main>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Prominent Non Basmati (RegularHybrid) & others/Broken Rice.png"
+            alt="Broken Rice"
+          />
+          <div class="content">
+            <h3>Broken Rice</h3>
+            <p>
+              Economical choice with quick cooking time; perfect for porridge,
+              snacks, and animal feed.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Prominent Non Basmati (RegularHybrid) & others/IR 64.png"
+            alt="IR 64"
+          />
+          <div class="content">
+            <h3>IR 64</h3>
+            <p>
+              Popular non-Basmati rice with medium grains, widely used in bulk
+              food services and export due to its affordability and versatility.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Prominent Non Basmati (RegularHybrid) & others/Katrani rice.png"
+            alt="Katrani Rice"
+          />
+          <div class="content">
+            <h3>Katrani Rice</h3>
+            <p>
+              Medium-grain rice suited for daily meals, offering soft texture
+              and high starch content for creamy dishes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Prominent Non Basmati (RegularHybrid) & others/Lubanya purple rice.png"
+            alt="Lubanya Purple Rice"
+          />
+          <div class="content">
+            <h3>Lubanya Purple Rice</h3>
+            <p>
+              Nutritious rice variety with striking purple color and high levels
+              of antioxidants, ideal for specialty health markets.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Prominent Non Basmati (RegularHybrid) & others/Multipe rices.png"
+            alt="Multipe Rices"
+          />
+          <div class="content">
+            <h3>Multipe Rices</h3>
+            <p>
+              A selection of assorted non-Basmati rice options tailored to meet
+              diverse culinary needs and regional preferences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Prominent Non Basmati (RegularHybrid) & others/Perboiled rice.png"
+            alt="Perboiled Rice"
+          />
+          <div class="content">
+            <h3>Perboiled Rice</h3>
+            <p>
+              Rice that’s partially boiled in the husk to improve nutrition,
+              texture, and resistance to overcooking; a staple in many regions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Prominent Non Basmati (RegularHybrid) & others/Ponni.png"
+            alt="Ponni"
+          />
+          <div class="content">
+            <h3>Ponni</h3>
+            <p>
+              Popular South Indian rice variety with short, soft grains perfect
+              for daily consumption and traditional dishes like idli or dosa
+              batter.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Prominent Non Basmati (RegularHybrid) & others/Sarwana.png"
+            alt="Sarwana"
+          />
+          <div class="content">
+            <h3>Sarwana</h3>
+            <p>
+              Medium-grain rice variety valued for its affordability and
+              suitability for everyday cooking across Indian households.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide-left">
+        <div class="product-card">
+          <img
+            src="images/Prominent Non Basmati (RegularHybrid) & others/sona masuri.png"
+            alt="Sona Masuri"
+          />S
+          <div class="content">
+            <h3>Sona Masuri</h3>
+            <p>
+              Famous lightweight and aromatic rice, ideal for steamed rice,
+              pongal, and other South Indian delicacies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2025 MACC Impex India Pvt. Ltd. | Contact: +91 93118 24504 |
+      agroimpex.india.dl@gmail.com, gautammohit793@gmail.com
+    </footer>
+    <script>
+      // Animate elements on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document
+        .querySelectorAll(".fade-in, .slide-left, .slide-right")
+        .forEach((el) => {
+          observer.observe(el);
+        });
+    </script>
+  </body>
+</html>

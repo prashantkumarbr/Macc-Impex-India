@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MACC Impex India Pvt. Ltd. | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Common reusable animation styles */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInRight {
+        from {
+          opacity: 0;
+          transform: translateX(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes floatText {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fadeInUp 1.2s ease forwards;
+        opacity: 0;
+      }
+      .slide-left {
+        animation: slideInLeft 1.2s ease forwards;
+        opacity: 0;
+      }
+      .slide-right {
+        animation: slideInRight 1.2s ease forwards;
+        opacity: 0;
+      }
+      header h1 {
+        animation: floatText 3s ease-in-out infinite;
+      }
+      .contact-buttons a:hover {
+        animation: pulse 0.8s ease-in-out;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(123, 94, 60, 0.5);
+        }
+        70% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 10px rgba(123, 94, 60, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(123, 94, 60, 0);
+        }
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        background: #f6f2e8;
+        color: #333;
+      }
+      header {
+        text-align: center;
+        padding: 50px 20px;
+        background: #f6f2e8;
+        animation: fadeIn 2s;
+      }
+      header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 3em;
+        margin: 0;
+        color: #7b5e3c;
+      }
+      header p {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #7b5e3c;
+        font-weight: 600;
+        font-size: 1.1em;
+        transition: color 0.3s;
+      }
+      nav a:hover {
+        color: #aa8659;
+      }
+      section {
+        max-width: 1000px;
+        margin: 60px auto;
+        text-align: center;
+        padding: 0 20px;
+        animation: slideUp 1.5s;
+      }
+      section img {
+        width: 80%;
+        max-width: 900px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+      section h2 {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+        color: #7b5e3c;
+      }
+      section p {
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+      footer {
+        text-align: center;
+        background: #7b5e3c;
+        color: white;
+        padding: 20px;
+        margin-top: 60px;
+        font-size: 0.9em;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>MACC IMPEX INDIA PVT. LTD.</h1>
+      <p>Growing with Quality, Serving with Trust</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
+
+    <section class="fade-in">
+      <img src="images/poster1.jpg" alt="Premium Rice" />
+      <h2>Welcome to MACC Impex</h2>
+      <p>
+        We are dedicated to bringing you premium quality Basmati and Non-Basmati
+        rice, directly from India’s fertile lands to your plate — with a
+        commitment to excellence and trust.
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2025 MACC Impex India Pvt. Ltd. | Contact: +91 93118 24504 |
+      agroimpex.india.dl@gmail.com, gautammohit793@gmail.com
+    </footer>
+    <script>
+      // Animate elements on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document
+        .querySelectorAll(".fade-in, .slide-left, .slide-right")
+        .forEach((el) => {
+          observer.observe(el);
+        });
+    </script>
+  </body>
+</html>
